@@ -8,6 +8,8 @@ Streamlit web application designed to generate cold emails by analyzing job post
   - Displays a title and a text input box where users can enter a URL to a job posting.
   - Once the URL is submitted, the app scrapes the webpage, extracts job information using the `Chain` class, and matches relevant portfolio links using the `Portfolio` class.
   - Finally, it generates a cold email (using a language model, likely via Langchain's ChatGroq) that aligns with the job description and portfolio links.
+ 
+  streamlit run .\app\main.py
 
 ### `chains.py`
 - Contains the `Chain` class which interacts with a large language model (`llama-3.1-70b-versatile` from Groq).
